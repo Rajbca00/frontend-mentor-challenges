@@ -1,0 +1,82 @@
+:root {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: hsl(47, 88%, 63%);
+    font-family: "Figtree";
+    font-size: 16px;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    border: 1px solid hsl(0, 0%, 7%);
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    max-width: 350px;
+    box-shadow: 6px 6px hsl(0, 0%, 7%);
+}
+
+
+.card-image {
+    border-radius: 1rem;
+}
+
+.card .date {
+    color: hsl(0, 0%, 32%);
+}
+
+.card-badge {
+    background-color: hsl(47, 88%, 63%);
+    font-size: small;
+    font-weight: 800;
+    display: inline;
+    padding: 0.2rem 0.5rem;
+    width: fit-content;
+    border-radius: 0.2rem;
+}
+
+.card-title:hover {
+    color: hsl(47, 88%, 63%);
+    cursor: pointer;
+}
+
+.card-title,
+p {
+    margin: 0;
+}
+
+.card p {
+    word-wrap: break-word;
+    color: hsl(0, 0%, 50%);
+}
+
+.card-author {
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+.card-author img {
+    max-height: 40px;
+}
+
+.card-author span {
+    font-weight: 800;
+}
+
+@media only screen and (max-width: 375px) {
+    .card {
+        max-width: 250px;
+    }
+}

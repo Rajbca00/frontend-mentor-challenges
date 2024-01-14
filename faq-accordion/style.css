@@ -12,10 +12,10 @@
 
 body {
     font-family: 'Work Sans', sans-serif;
-    background-color: var(--light-pink);
     background: url('./assets/images/background-pattern-desktop.svg') no-repeat;
     background-position-y: top;
     background-size: contain;
+    background-color: var(--light-pink);
     overflow-y: hidden;
     overflow-x: hidden;
 }
@@ -34,7 +34,7 @@ body {
     background-color: var(--white);
     padding: 2rem;
     border-radius: 1rem;
-    max-width: 400px;
+    max-width: 450px;
     font-size: smaller;
 }
 

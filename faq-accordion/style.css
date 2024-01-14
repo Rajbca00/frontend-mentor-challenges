@@ -1,0 +1,95 @@
+/* - White: hsl(0, 0%, 100%)
+- Light pink: hsl(275, 100%, 97%)
+- Grayish purple: hsl(292, 16%, 49%)
+- Dark purple: hsl(292, 42%, 14%) */
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --light-pink: hsl(275, 100%, 97%);
+    --grayish-purple: hsl(292, 16%, 49%);
+    --dark-purple: hsl(292, 42%, 14%);
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    background-color: var(--light-pink);
+    background: url('./assets/images/background-pattern-desktop.svg') no-repeat;
+    background-position-y: top;
+    background-size: contain;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.faq-card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 1rem;
+    max-width: 400px;
+    font-size: smaller;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+}
+
+.title h1 {
+    margin: 0 1rem;
+}
+
+.title img {
+    max-width: 25px;
+}
+
+.faq {
+    word-wrap: break-word;
+    padding: 1rem 0 0.5rem 0;
+    border-top: 1px solid var(--light-pink);
+}
+
+.qn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 800;
+    color: var(--dark-purple);
+    cursor: pointer;
+
+}
+
+.qn img {
+    max-width: 25px;
+}
+
+.ans {
+    color: var(--grayish-purple);
+    max-height: fit-content;
+    display: inline-block;
+    transition: all 1s;
+}
+
+.ans.collapsed {
+    max-height: 0;
+    display: none;
+}
+
+@media only screen and (max-width: 375px) {
+    .faq-card {
+        max-width: 250px;
+    }
+
+    body {
+        background: url('./assets/images/background-pattern-mobile.svg') no-repeat;
+    }
+}

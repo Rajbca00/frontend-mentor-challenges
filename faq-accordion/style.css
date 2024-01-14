@@ -68,6 +68,11 @@ body {
 
 }
 
+.qn:hover,
+.qn:focus {
+    color: var(--grayish-purple);
+}
+
 .qn img {
     max-width: 25px;
 }
